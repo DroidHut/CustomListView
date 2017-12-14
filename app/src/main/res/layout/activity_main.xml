@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivani.appone.MainActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="My Scrollable View" 
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#40c4ff"
+        android:elevation="10dp"
+        android:drawableTop="@mipmap/ic_launcher_round"/>
+       <TextView
+           android:id="@+id/titleOne"
+           android:layout_below="@+id/textOne"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="Programming Languages "
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="15dp"
+           android:layout_centerInParent="true"/>
+        <ListView
+            android:layout_below="@+id/titleOne"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="#c8e6c9"
+            android:scrollbarStyle="outsideInset"
+            android:elevation="10dp"></ListView>
+
+        <TextView
+            android:id="@+id/titleTwo"
+            android:layout_below="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Versions "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerInParent="true"/>
+        <ListView
+            android:layout_below="@+id/titleTwo"
+            android:id="@+id/listTwo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:background="#ffcc80"
+            android:elevation="10dp"
+            android:scrollbarStyle="outsideOverlay"></ListView>
+        <TextView
+            android:layout_below="@+id/listTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a srollable View"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="45dp"
+            android:layout_margin="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="serif"></TextView>
+    </RelativeLayout>
+
+</ScrollView>
